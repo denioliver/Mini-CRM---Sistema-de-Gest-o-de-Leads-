@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import { UserPlus, Mail, Lock, User, AlertCircle, Loader2, Eye, EyeOff } from "lucide-react";
+import {
+  UserPlus,
+  Mail,
+  Lock,
+  User,
+  AlertCircle,
+  Loader2,
+  Eye,
+  EyeOff,
+} from "lucide-react";
 import "./Register.css";
 
 const Register: React.FC = () => {
