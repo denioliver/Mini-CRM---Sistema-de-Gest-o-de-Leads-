@@ -11,8 +11,14 @@ import LeadDetails from "./pages/LeadDetails";
 import LeadForm from "./pages/LeadForm";
 
 function App() {
+  // Detecta automaticamente o basename baseado no ambiente
+  const basename =
+    import.meta.env.MODE === "production"
+      ? "/Mini-CRM---Sistema-de-Gestao-de-Leads-"
+      : "";
+
   return (
-    <BrowserRouter basename="/Mini-CRM---Sistema-de-Gestao-de-Leads-">
+    <BrowserRouter basename={basename}>
       <AuthProvider>
         <LeadsProvider>
           <Routes>

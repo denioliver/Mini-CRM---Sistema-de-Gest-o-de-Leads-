@@ -85,22 +85,48 @@
 
 @media (max-width: 768px) {
   .kanban-column {
-    min-width: 280px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 640px) {
-  .kanban-column {
     min-width: 260px;
-    padding: 0.875rem;
+    max-width: 280px;
+    padding: 0.75rem;
   }
 
   .column-header {
-    margin-bottom: 0.875rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.625rem;
   }
 
   .column-title {
     font-size: 0.875rem;
+  }
+
+  .column-count {
+    font-size: 0.6875rem;
+    padding: 0.1875rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanban-column {
+    min-width: 240px;
+    max-width: 260px;
+    padding: 0.625rem;
+  }
+
+  .column-header {
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .column-title {
+    font-size: 0.8125rem;
+  }
+
+  .empty-column {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .empty-column p {
+    font-size: 0.8125rem;
   }
 }
